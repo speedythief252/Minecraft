@@ -1,0 +1,15 @@
+//minecraft basic code
+
+let name = "Evan";
+let haircolor = "brown";
+let age = 13;
+let likechicken = "yum";
+
+age = randint(1,100);
+
+player.say("your age is : "+ age)
+
+if (age >= 5 && name == "Evan"){
+    player.say("sus_amogus_supreme");
+}else{ player.say("grounded is a better game")
+}
