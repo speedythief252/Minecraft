@@ -13,3 +13,31 @@ if (age >= 5 && name == "Evan"){
     player.say("sus_amogus_supreme");
 }else{ player.say("grounded is a better game")
 }
+
+
+
+
+
+
+player.onChat("move", function () {
+	player.say ("lets move");
+    agent.teleportToPlayer()
+    let distance = randint(1, 50)
+    agent.move(FORWARD, distance )
+    agent.move(FORWARD, -distance)
+    player.say ("agent moved away " + distance + " blocks" )
+
+
+
+
+
+})
+
+
+/*create function
+log activity
+bring agent to you
+get random distance
+say how far you want to move 
+move the agent
+*/
