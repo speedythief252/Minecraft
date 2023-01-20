@@ -41,3 +41,38 @@ get random distance
 say how far you want to move 
 move the agent
 */
+
+
+
+
+
+
+
+
+player.onChat("startmaze", function () {
+    agent.teleportToPlayer()
+    
+    agent.teleport(world(67, -61, -107), WEST);
+    while (true) {
+solveMaze();
+    }
+})
+
+function solveMaze() {
+
+    
+    player.say("Taking a step to solve the maze")
+    //if air left 
+    //turn left 
+    //go forward
+    //else if air forward 
+    //go forward
+    //else if air right
+    //turn right 
+    //go forward
+    //else 180
+    }
+
+
+
+
