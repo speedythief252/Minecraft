@@ -2,7 +2,7 @@ player.onChat("startmaze", function () {
     agent.teleportToPlayer()
     
     agent.teleport(world(67, -61, -107), NORTH);
-    while (true) {
+    while (!agent.detect(AgentDetection.Redstone, DOWN)) {
 solveMaze();
     }
 })
