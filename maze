@@ -1,0 +1,40 @@
+player.onChat("startmaze", function () {
+    agent.teleportToPlayer()
+    
+    agent.teleport(world(67, -61, -107), WEST);
+    while (true) {
+solveMaze();
+    }
+})
+
+function solveMaze() {
+ 
+    
+    player.say("Taking a step to solve the maze")
+    if (!agent.detect(AgentDetection.Block, LEFT)//if air left 
+        && !agent.detect(AgentDetection.Redstone, LEFT)) {//if air left 
+    player.say(" - Able to move left");
+        agent.turn(TurnDirection.Left); //turn left 
+        agent.move(FORWARD, 1);//go forward
+
+}
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    //else if air forward 
+    //go forward
+    //else if air right
+    //turn right 
+    //go forward
+    //else 180
+    }
+
+
+
+
